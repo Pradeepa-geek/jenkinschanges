@@ -1,0 +1,95 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.41">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>BuildPublishPipeline</upstreamProject>
+            <upstreamUrl>job/BuildPublishPipeline/</upstreamUrl>
+            <upstreamBuild>48</upstreamBuild>
+            <upstreamCauses>
+              <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.support.steps.build.BuildUpstreamNodeAction plugin="pipeline-build-step@2.13">
+      <upstreamNodeId>43</upstreamNodeId>
+      <upstreamRunId>BuildPublishPipeline#48</upstreamRunId>
+    </org.jenkinsci.plugins.workflow.support.steps.build.BuildUpstreamNodeAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.21">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>175</queueId>
+  <timestamp>1626182614431</timestamp>
+  <startTime>1626182614482</startTime>
+  <result>FAILURE</result>
+  <duration>53867</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node(&apos;QA_OWNER&apos;){
+    
+    stage(&apos;Download Artifact from Nexus&apos;){
+       sh &quot;wget --user=admin --password=admin123 http://localhost:8081/nexus/content/repositories/webapp/com/awstechguide/webapp/1.0.0/webapp-1.0.0.war&quot;
+   }
+   stage(&apos;Deploy war file into tomcat&apos;){
+       sh &quot;sudo /opt/tomcat/bin/shutdown.sh&quot;
+       sh &quot;sudo cp -avr webapp-1.0.0.war /opt/tomcat/webapps/&quot;
+       sleep(time:5,unit:&quot;SECONDS&quot;) 
+       sh &quot;sudo /opt/tomcat/bin/startup.sh&quot;
+       sleep(time:40,unit:&quot;SECONDS&quot;)
+       CMD = &quot;curl --write-out %{http_code} --silent --output /dev/null http://localhost:9090/webapp-1.0.0/&quot;
+       sh &quot;${CMD} &gt; commandResult&quot;
+       env.status = readFile(&apos;commandResult&apos;).trim()
+       if (env.status == &apos;200&apos;) {
+          sh &quot;echo Deployment status is ${env.status}&quot;
+        } else {
+          sh &quot;echo Deployment status is not 200&quot;
+          emailext body: &apos;Deployment has failed .View Results at $BUILD_URL to find out errors. &lt;br&gt;&lt;br&gt; ${CHANGES} &lt;br&gt;&lt;br&gt; -------------------------------------------------- &lt;br&gt;${BUILD_LOG, maxLines=100, escapeHtml=false}&apos;, 
+							to: &quot;pradi.csp@gmail.com&quot;, 
+							subject: &apos;Deployment has failed in Jenkins: $PROJECT_NAME - #$BUILD_NUMBER&apos;
+	  error(&apos;Marking the build failed&apos;)
+         }
+   }
+
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>4304193695</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>11414358</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>4908899277</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>21724798</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>26118360</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>22</iota>
+    <head>1:22</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

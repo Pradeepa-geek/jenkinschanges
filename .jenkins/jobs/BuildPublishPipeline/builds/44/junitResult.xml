@@ -1,0 +1,29 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<result plugin="junit@1.51">
+  <suites>
+    <suite>
+      <file>/home/labuser/.jenkins/workspace/BuildPublishPipeline/target/surefire-reports/TEST-com.awstechguide.webapp.WebappApplicationTests.xml</file>
+      <name>com.awstechguide.webapp.WebappApplicationTests</name>
+      <duration>4.589</duration>
+      <time>4.589</time>
+      <nodeId>18</nodeId>
+      <enclosingBlocks>
+        <string>15</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Checkout and Build</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.427</duration>
+          <className>com.awstechguide.webapp.WebappApplicationTests</className>
+          <testName>contextLoads</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>4.589</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>
