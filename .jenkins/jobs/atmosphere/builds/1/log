@@ -1,0 +1,38 @@
+Started by user [8mha:////4AjHMjkt69zsMppt+Q2njOv6AOxFDCuIsKKJGyOq/GrDAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgY+/dLi1CL9gqLElNTUgkQAqdjb+sMAAAA=[0mPradeepa Siddappa
+Running as SYSTEM
+Building in workspace /home/labuser/.jenkins/workspace/atmosphere
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/swampf0etus/jenkins2-course-spring-boot.git
+ > git init /home/labuser/.jenkins/workspace/atmosphere # timeout=10
+Fetching upstream changes from https://github.com/swampf0etus/jenkins2-course-spring-boot.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.7.4'
+ > git fetch --tags --progress https://github.com/swampf0etus/jenkins2-course-spring-boot.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/swampf0etus/jenkins2-course-spring-boot.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 8cfafcb5a00d5fafdba2b30c3a937f179743a56e (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8cfafcb5a00d5fafdba2b30c3a937f179743a56e # timeout=10
+Commit message: "A small change to to test triggering a build"
+First time build. Skipping changelog.
+[atmosphere] $ mvn -f /spring-boot-samples/spring-boot-sample-atmosphere/pom.xml compile
+[INFO] Scanning for projects...
+[8mha:////4Oy+rou2kOz5GnR2+IN+eFwv75gDt1z29v5FgNYfLXLoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] [ERROR] Some problems were encountered while processing the POMs:
+[FATAL] Non-readable POM /spring-boot-samples/spring-boot-sample-atmosphere/pom.xml: /spring-boot-samples/spring-boot-sample-atmosphere/pom.xml (No such file or directory) @ 
+ @ 
+[8mha:////4Oy+rou2kOz5GnR2+IN+eFwv75gDt1z29v5FgNYfLXLoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] The build could not read 1 project -> [Help 1]
+[8mha:////4Oy+rou2kOz5GnR2+IN+eFwv75gDt1z29v5FgNYfLXLoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR]   
+[8mha:////4Oy+rou2kOz5GnR2+IN+eFwv75gDt1z29v5FgNYfLXLoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR]   The project  (/spring-boot-samples/spring-boot-sample-atmosphere/pom.xml) has 1 error
+[8mha:////4Oy+rou2kOz5GnR2+IN+eFwv75gDt1z29v5FgNYfLXLoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR]     Non-readable POM /spring-boot-samples/spring-boot-sample-atmosphere/pom.xml: /spring-boot-samples/spring-boot-sample-atmosphere/pom.xml (No such file or directory)
+[8mha:////4Oy+rou2kOz5GnR2+IN+eFwv75gDt1z29v5FgNYfLXLoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] 
+[8mha:////4Oy+rou2kOz5GnR2+IN+eFwv75gDt1z29v5FgNYfLXLoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4Oy+rou2kOz5GnR2+IN+eFwv75gDt1z29v5FgNYfLXLoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4Oy+rou2kOz5GnR2+IN+eFwv75gDt1z29v5FgNYfLXLoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] 
+[8mha:////4Oy+rou2kOz5GnR2+IN+eFwv75gDt1z29v5FgNYfLXLoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4Oy+rou2kOz5GnR2+IN+eFwv75gDt1z29v5FgNYfLXLoAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE

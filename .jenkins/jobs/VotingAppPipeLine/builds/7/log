@@ -1,0 +1,208 @@
+Started by user [8mha:////4AjHMjkt69zsMppt+Q2njOv6AOxFDCuIsKKJGyOq/GrDAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgY+/dLi1CL9gqLElNTUgkQAqdjb+sMAAAA=[0mPradeepa Siddappa
+Obtained Jenkinsfile from git https://github.com/Pradeepa-geek/azure-voting-app-redis.git
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4Guiil79n3qMEpw08+k8DKFlsMmNFv/yB4mnjV0uazPyAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4MB+3lH4KyFbXoYr4sV3o+LDqTtNqQSwJUxj/6+SNp71AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4ApjI18resyxp5NWt5MEqo6//vj7vDsJM2uxreRZpVAUAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /home/labuser/.jenkins/workspace/VotingAppPipeLine
+[8mha:////4O/Gcy9iyAp4MIuoAQiLr7cwxqUuZZKFxBKC/79EMqA0AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4Pyoun0PHHO5Omh3j81Nz5giHwVeizIVS/ZsRQvZhBfJAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4CeD13314sNyT/6Bno6lxgN0BK4LySrBkmiR2oF6/dmzAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4FxWGSGIHTjdTI3s3qhJjfODPTWXNtsrZ0elGN36hT/3AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/labuser/.jenkins/workspace/VotingAppPipeLine/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Pradeepa-geek/azure-voting-app-redis.git # timeout=10
+Fetching upstream changes from https://github.com/Pradeepa-geek/azure-voting-app-redis.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.7.4'
+ > git fetch --tags --progress https://github.com/Pradeepa-geek/azure-voting-app-redis.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 26e74f090b8acbd39ff9a7dcde16924600c646d9 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 26e74f090b8acbd39ff9a7dcde16924600c646d9 # timeout=10
+Commit message: "Update Jenkinsfile"
+ > git rev-list --no-walk ef87a0b00acc283b2b09ed48db322e9c07d64332 # timeout=10
+[8mha:////4CVXK6DtrW1rZBRVb5t60svy+SJWx8RB6RI+ICY6xNO8AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4OBcAxW3yyax85Cei+/GVjVmIAnaxllEeDSKfsOYwqpuAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4FTYou1/1sLLBm2eYpr4rpf5OiQVPP0TVguGwphjBfKcAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4OzvYWRKkVvJJ/XUFbigWk3V0yVoPK3La6q6mqLbM4brAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4MO1fPjfp6lSqupT2rrcnBGbb14Dt8Ulaa+7XA3p6CPoAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] stage
+[8mha:////4BhIb3J4P2gk/g4aXWs+woBkRYqbDmvHF6KGSmjHruazAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] { (Verify Branch)
+[8mha:////4FH3Kd7K5aJT5y4o5o5eXwx5UumI7b7g/IuWQ6BQUm/TAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBgq0rvS+AAAA[0m[Pipeline] echo
+origin/master
+[8mha:////4BrUTmFESDgtY22zg+xvgXjcWHGK7uon3GkvHhA6BtuMAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N7BnLt++AAAA[0m[Pipeline] }
+[8mha:////4A21lonoh0/ImBw9+u/ckCKhOzIieZ+9uGdIYDKpFDmvAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N4glvS6+AAAA[0m[Pipeline] // stage
+[8mha:////4Px+9O/Ujdfailu1RXZTdlCY3u2wviCnLtjN1SpLoWw8AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUnRgQE2uUhROEJoSk0f9tkpJOnIircQdaKjHhwbItWe/1hioGOFEwzGnsLMbWst6PZk4sU+hunjJzdGUtYSSvmdBZkNLntQpKGlYVJWw4bDW2nqJFk2DHnXzI2ks09SWFeTtyKK0a4AkFn8lJhvQtU4D9fVSR8Mf5C4CpT1A2zWKH5Vl9ANydZ8vCAAAA[0m[Pipeline] stage
+[8mha:////4JjKS+Grn4DeiiZ0nckh3cGWJFRzJ4yMiMnjh5SQc6q/AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] { (Docker Build)
+[8mha:////4FKlZyIUBovEkjf/1QDCj/JehIEg9bUUfXXiDUWM6Lu0AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiOhCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBr2eB0O+AAAA[0m[Pipeline] sh
++ cd azure-vote/
++ docker images -a
+REPOSITORY        TAG       IMAGE ID       CREATED         SIZE
+jenkins/jenkins   latest    2eb121715e39   10 days ago     569MB
+mailhog/mailhog   latest    4de68494cd0d   11 months ago   392MB
++ docker build -t jenkins-pipeline .
+Sending build context to Docker daemon  16.38kB
+Step 1/3 : FROM tiangolo/uwsgi-nginx-flask:python3.6
+python3.6: Pulling from tiangolo/uwsgi-nginx-flask
+90fe46dd8199: Pulling fs layer
+35a4f1977689: Pulling fs layer
+bbc37f14aded: Pulling fs layer
+74e27dc593d4: Pulling fs layer
+4352dcff7819: Pulling fs layer
+1847e662e737: Pulling fs layer
+11d40aa4a4d0: Pulling fs layer
+423a225c2f8b: Pulling fs layer
+730abf0e8db7: Pulling fs layer
+2f2c1f99caec: Pulling fs layer
+117b2bb6b9f5: Pulling fs layer
+24cf85cbbf19: Pulling fs layer
+e5b1d4c157be: Pulling fs layer
+41ed8631c488: Pulling fs layer
+4cea017a23a1: Pulling fs layer
+634fcb400bb1: Pulling fs layer
+751c69d0afb6: Pulling fs layer
+d5a08367e03a: Pulling fs layer
+d9cd7fb23581: Pulling fs layer
+f81f7e2c0189: Pulling fs layer
+cd58b8e863a0: Pulling fs layer
+bc088c01951c: Pulling fs layer
+2a8e3800133d: Pulling fs layer
+31917b7ecee1: Pulling fs layer
+8209ceb7fced: Pulling fs layer
+24e83c1bdaaa: Pulling fs layer
+74e27dc593d4: Waiting
+4352dcff7819: Waiting
+1847e662e737: Waiting
+11d40aa4a4d0: Waiting
+423a225c2f8b: Waiting
+730abf0e8db7: Waiting
+2f2c1f99caec: Waiting
+117b2bb6b9f5: Waiting
+24cf85cbbf19: Waiting
+e5b1d4c157be: Waiting
+41ed8631c488: Waiting
+4cea017a23a1: Waiting
+634fcb400bb1: Waiting
+751c69d0afb6: Waiting
+d5a08367e03a: Waiting
+d9cd7fb23581: Waiting
+f81f7e2c0189: Waiting
+cd58b8e863a0: Waiting
+bc088c01951c: Waiting
+2a8e3800133d: Waiting
+31917b7ecee1: Waiting
+8209ceb7fced: Waiting
+24e83c1bdaaa: Waiting
+35a4f1977689: Verifying Checksum
+35a4f1977689: Download complete
+bbc37f14aded: Verifying Checksum
+bbc37f14aded: Download complete
+90fe46dd8199: Verifying Checksum
+90fe46dd8199: Download complete
+74e27dc593d4: Verifying Checksum
+74e27dc593d4: Download complete
+1847e662e737: Verifying Checksum
+1847e662e737: Download complete
+423a225c2f8b: Verifying Checksum
+423a225c2f8b: Download complete
+11d40aa4a4d0: Verifying Checksum
+11d40aa4a4d0: Download complete
+730abf0e8db7: Verifying Checksum
+730abf0e8db7: Download complete
+2f2c1f99caec: Verifying Checksum
+2f2c1f99caec: Download complete
+117b2bb6b9f5: Verifying Checksum
+117b2bb6b9f5: Download complete
+e5b1d4c157be: Verifying Checksum
+e5b1d4c157be: Download complete
+24cf85cbbf19: Verifying Checksum
+24cf85cbbf19: Download complete
+41ed8631c488: Verifying Checksum
+41ed8631c488: Download complete
+4cea017a23a1: Verifying Checksum
+4cea017a23a1: Download complete
+634fcb400bb1: Verifying Checksum
+634fcb400bb1: Download complete
+751c69d0afb6: Verifying Checksum
+751c69d0afb6: Download complete
+d5a08367e03a: Verifying Checksum
+d5a08367e03a: Download complete
+d9cd7fb23581: Verifying Checksum
+d9cd7fb23581: Download complete
+f81f7e2c0189: Verifying Checksum
+f81f7e2c0189: Download complete
+cd58b8e863a0: Verifying Checksum
+cd58b8e863a0: Download complete
+bc088c01951c: Verifying Checksum
+bc088c01951c: Download complete
+2a8e3800133d: Verifying Checksum
+2a8e3800133d: Download complete
+31917b7ecee1: Verifying Checksum
+31917b7ecee1: Download complete
+8209ceb7fced: Verifying Checksum
+8209ceb7fced: Download complete
+24e83c1bdaaa: Verifying Checksum
+24e83c1bdaaa: Download complete
+4352dcff7819: Verifying Checksum
+4352dcff7819: Download complete
+90fe46dd8199: Pull complete
+35a4f1977689: Pull complete
+bbc37f14aded: Pull complete
+74e27dc593d4: Pull complete
+4352dcff7819: Pull complete
+1847e662e737: Pull complete
+11d40aa4a4d0: Pull complete
+423a225c2f8b: Pull complete
+730abf0e8db7: Pull complete
+2f2c1f99caec: Pull complete
+117b2bb6b9f5: Pull complete
+24cf85cbbf19: Pull complete
+e5b1d4c157be: Pull complete
+41ed8631c488: Pull complete
+4cea017a23a1: Pull complete
+634fcb400bb1: Pull complete
+751c69d0afb6: Pull complete
+d5a08367e03a: Pull complete
+d9cd7fb23581: Pull complete
+f81f7e2c0189: Pull complete
+cd58b8e863a0: Pull complete
+bc088c01951c: Pull complete
+2a8e3800133d: Pull complete
+31917b7ecee1: Pull complete
+8209ceb7fced: Pull complete
+24e83c1bdaaa: Pull complete
+Digest: sha256:98c838b9d7861245ca4035816e8deb0f4efa11bc5deb8bdd74df0ec0b2aa5836
+Status: Downloaded newer image for tiangolo/uwsgi-nginx-flask:python3.6
+ ---> 997d8bb5f569
+Step 2/3 : RUN pip install redis
+ ---> Running in bae5232189f0
+Collecting redis
+  Downloading redis-3.5.3-py2.py3-none-any.whl (72 kB)
+Installing collected packages: redis
+Successfully installed redis-3.5.3
+[91mWARNING: You are using pip version 20.1; however, version 21.1.3 is available.
+You should consider upgrading via the '/usr/local/bin/python -m pip install --upgrade pip' command.
+[0mRemoving intermediate container bae5232189f0
+ ---> 806056a687fb
+Step 3/3 : ADD /azure-vote /app
+ ---> de686f14a5e7
+Successfully built de686f14a5e7
+Successfully tagged jenkins-pipeline:latest
++ docker images -a
+REPOSITORY                   TAG         IMAGE ID       CREATED                  SIZE
+jenkins-pipeline             latest      de686f14a5e7   Less than a second ago   944MB
+<none>                       <none>      806056a687fb   2 seconds ago            944MB
+jenkins/jenkins              latest      2eb121715e39   10 days ago              569MB
+tiangolo/uwsgi-nginx-flask   python3.6   997d8bb5f569   6 months ago             943MB
+mailhog/mailhog              latest      4de68494cd0d   11 months ago            392MB
++ cd ..
+[8mha:////4JkkF21fBtxfzw/W3ypBuI/MTkUF/eF2VMYVvvMVJAb4AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICVEgoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AEWNdkpvgAAAA==[0m[Pipeline] }
+[8mha:////4Cpwa0E+oEMjxiPAZcKL4xP6/SfvA1dW4yIj7fa7LnJqAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKi0FAgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AEi+zpyvgAAAA==[0m[Pipeline] // stage
+[8mha:////4EEBekdgPWRGXyr07o///ATHOHu6PT8wcSI8FMyUC+KQAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMJR0iIqWisNLzCxMU6sO8e+kFS8iK/xBywiUbHFamebeb1hmyKcKFrRGxwcps6J4Cebl5gpDjdPs+jpKjrCRN6I1swtaXNesSU2sKYoYSNhZ7DzlBxahr3s1UNVXqGtLhzzd5RQOj3CEwqZzawif2GJcLhPOhH+PH8FsITAUDZNrrr+ALkszR2+AAAA[0m[Pipeline] }
+[8mha:////4KSM+w8ijv+8ReGf5+6HN03Lz2BAbExVMWRnX0aFQMDKAAAApB+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGLDp0SpaC03nMAkxjixdoPt4FSciKtxBywiUTHFaN407/WGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYhQrk/5NptP4rPlqG+AAAA[0m[Pipeline] // withEnv
+[8mha:////4O2NdR/757yVvDDlssFzYynzhEo1d4laF2aUp59xWgO1AAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6Ikhs04uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0g35eCrPwA6/9Rob0AAAA=[0m[Pipeline] }
+[8mha:////4HCmfnhjpZceAXbBSZ8eQ4GFXtpKA4vnO3rff4o6Zt4RAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRQFSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsXZLsP+ENVAr0AAAA=[0m[Pipeline] // node
+[8mha:////4JBR9MSG+l2CYpv0eufQNzIZsTJJRT6QmjH9wpvO9CEkAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkDC7GybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FebkXZOUHvgnyMr0AAAA=[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

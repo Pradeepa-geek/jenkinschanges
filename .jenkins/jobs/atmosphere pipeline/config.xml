@@ -1,0 +1,54 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.41">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>-1</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers>
+        <hudson.triggers.SCMTrigger>
+          <spec>* * * * *</spec>
+          <ignorePostCommitHooks>false</ignorePostCommitHooks>
+        </hudson.triggers.SCMTrigger>
+      </triggers>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.92">
+    <script>node{
+    try{
+        stage(&apos;checkout&apos;) {
+        git &apos;https://github.com/Pradeepa-geek/jenkins2-course-spring-boot.git&apos;
+        } 
+        def projectPath=&quot;spring-boot-samples/spring-boot-sample-atmosphere/&quot;;
+        dir(projectPath) {
+           stage(&apos;clean compile package&apos;){
+               sh &apos;mvn clean package&apos;
+           }
+           stage(&apos;Archive Artifacts&apos;){
+               archiveArtifacts artifacts: &apos;target/*.jar&apos;, followSymlinks: false
+           }
+      } 
+         notify(&apos;Finished&apos;)
+    }catch(error){
+        notify(&apos;Error :&apos;+error)
+    }
+      
+}
+
+def notify(status){
+emailext body: status+&apos;:view Resutls here : &lt;a href=$BUILD_URL&gt;$JOB_NAME [$BUILD_NUMBER]&lt;/a&gt;&apos;, subject: &apos;Finished Executing : Job $JOB_NAME&apos;, to: &apos;pradi.csp@gmail.com&apos;
+}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

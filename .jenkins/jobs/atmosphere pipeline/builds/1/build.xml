@@ -1,0 +1,69 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.41">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>Pradeepa</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.21">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>7</queueId>
+  <timestamp>1625650859668</timestamp>
+  <startTime>1625650859701</startTime>
+  <result>FAILURE</result>
+  <duration>1172</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>git &apos;https://github.com/swampf0etus/jenkins2-course-spring-boot.git&apos;
+
+def projectPath=&quot;spring-boot-samples/spring-boot-sample-atmosphere/&quot;;
+
+dir(projectPath) {
+   sh &apos;mvn clean package&apos;
+   archiveArtifacts artifacts: &apos;target/*.jar&apos;, followSymlinks: false
+}
+
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>148161689</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>91873928</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>432554047</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>431927414</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>137258118</long>
+      </entry>
+    </timings>
+    <sandbox>false</sandbox>
+    <iota>4</iota>
+    <head>1:4</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

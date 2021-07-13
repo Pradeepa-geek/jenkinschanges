@@ -1,0 +1,44 @@
+Started by user [8mha:////4AjHMjkt69zsMppt+Q2njOv6AOxFDCuIsKKJGyOq/GrDAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgY+/dLi1CL9gqLElNTUgkQAqdjb+sMAAAA=[0mPradeepa Siddappa
+Running as SYSTEM
+Building in workspace /home/labuser/.jenkins/workspace/atmosphere
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/labuser/.jenkins/workspace/atmosphere/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/swampf0etus/jenkins2-course-spring-boot.git # timeout=10
+Fetching upstream changes from https://github.com/swampf0etus/jenkins2-course-spring-boot.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.7.4'
+ > git fetch --tags --progress https://github.com/swampf0etus/jenkins2-course-spring-boot.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 8cfafcb5a00d5fafdba2b30c3a937f179743a56e (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8cfafcb5a00d5fafdba2b30c3a937f179743a56e # timeout=10
+Commit message: "A small change to to test triggering a build"
+ > git rev-list --no-walk 8cfafcb5a00d5fafdba2b30c3a937f179743a56e # timeout=10
+[atmosphere] $ mvn -f spring-boot-samples/spring-boot-sample-atmosphere/pom.xml compile
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spring Boot Atmosphere Sample 1.4.0.RELEASE
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4DSMU+e1Dr+GRmlljcrZYxyziPooOVPPFcJQFOlh3+51AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (default-prepare-agent) @ spring-boot-sample-atmosphere ---
+[INFO] argLine set to -javaagent:/home/labuser/.m2/repository/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/home/labuser/.jenkins/workspace/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/target/jacoco.exec
+[INFO] 
+[8mha:////4DSMU+e1Dr+GRmlljcrZYxyziPooOVPPFcJQFOlh3+51AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-boot-sample-atmosphere ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[8mha:////4DSMU+e1Dr+GRmlljcrZYxyziPooOVPPFcJQFOlh3+51AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-boot-sample-atmosphere ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/labuser/.jenkins/workspace/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.153 s
+[INFO] Finished at: 2021-07-07T07:33:36+00:00
+[INFO] Final Memory: 25M/237M
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS
