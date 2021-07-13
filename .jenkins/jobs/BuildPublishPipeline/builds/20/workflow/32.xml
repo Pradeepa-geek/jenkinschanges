@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.8">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.92">
+    <parentIds>
+      <string>31</string>
+    </parentIds>
+    <id>32</id>
+    <descriptorId>org.sonarsource.scanner.jenkins.pipeline.WaitForQualityGateStep</descriptorId>
+  </node>
+  <actions>
+    <wf.a.TimingAction plugin="workflow-api@2.46">
+      <startTime>1626163195892</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+    <s.a.PauseAction>
+      <cause>SonarQube analysis</cause>
+      <startTime>1626163196021</startTime>
+      <endTime>1626163197659</endTime>
+    </s.a.PauseAction>
+  </actions>
+</Tag>
